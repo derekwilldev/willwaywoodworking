@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--
+Derek Will
+HTML (CSCI-1145)
+November 12, 2016
+Project 9
+-->
+
+
+<head>
+<title>Will Way Woodworking: A Wood Crafting Portfolio for Tyler Will</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/style.css">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="js/effects.js"></script>
+</head>
+
+<body>
+
+<header>
+<div>
+<img class="ww-logo" src="images/ww-logo.png" title="Will Way Woodworking" alt="Will Way Woodworking" />
+</div>
+<h1>The Fine Woodworkings of Tyler Will</h1>
+</header>
+
+<nav>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Me</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="resources.html">Resources</a></li>
+	<li><a href="testimonials.html">Testimonials</a></li>
+	<li><a href="contact.html">Contact Me</a></li>
+</ul>
+</nav>
+
+<main>
+<h2 class="contact-hdline pg-headline"><span class="pg-title">Contact Me</span></h2>
+<section>
+<p class="pg-desc">Feel free to send an email to <a href="mailto:tylerbwill@gmail.com">tylerbwill@gmail.com</a>, but be sure to include the following information:</p>
+
+<p>Your first and last name, your email, if your post is general feedback or a project idea, and your comments.</p>
+
+<div class="email-info">
+<form name="contactme" method="get" id="contactme">
+	<label for="first-name">First Name:</label>
+	<input type="text" name="first-name" id="first-name" required="required" />
+	
+	<label for="last-name">Last Name:</label>
+	<input type="text" name="first-name" id="last-name" required="required" />
+	
+	<label for="email">Your Email:</label>
+	<input type="text" name="email" id="email" required="required" />
+	
+	<!-- <p class="form-title">Message type</p> -->
+	<fieldset class="feedback">
+	<input type="radio" name="msgtype" id="feedback" required="required" />
+	<label for="feedback">General Feedback</label>
+	</fieldset>
+	<fieldset class="quote">
+	<input type="radio" name="msgtype" id="quote" required="required" />
+	<label for="quote">Project Quote</label>
+	</fieldset>
+	
+	<label class="message" for="message">Message:</label>
+	<textarea cols="90" rows="10" name="message" id="message" required="required"></textarea>
+	
+	<input type="reset" value="Reset Form"><input type="submit" value="Submit Form">
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<p class="copyright"><small>&copy; 2016 <a href="index.html">Will Way Woodworking</a></small></p>
+<p class="copyright"><small>Website Developed by Will Creative</small></p>
+</footer>
+
+</body>
+</html>
